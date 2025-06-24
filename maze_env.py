@@ -1,5 +1,5 @@
 import gymnasium as gym
-from test_maze import MazeGameEnv # Assuming your environment class is in maze_env.py
+from maze_class import MazeGameEnv # Assuming your environment class is in maze_env.py
 import pygame
 import numpy as np
 
@@ -14,15 +14,7 @@ maze_config = [
 # --- Option 1: Direct Instantiation (Recommended for simplicity here) ---
 env = MazeGameEnv(maze=maze_config, render_mode='human')
 
-# --- Option 2: Using gym.register and gym.make (useful for broader integration) ---
-# from gymnasium.envs.registration import register
-# if 'MazeGame-v0' not in gym.envs.registry: # Avoid re-registering if script is run multiple times
-#     register(
-#         id='MazeGame-v0',
-#         entry_point='maze_env:MazeGameEnv', # Format: 'module_name:ClassName'
-#     )
-# # When using gym.make, pass kwargs for __init__ like this:
-# env = gym.make('MazeGame-v0', maze=maze_config, render_mode='human')
+
 
 
 # Test with Stable-Baselines3 environment checker (optional, but good practice)

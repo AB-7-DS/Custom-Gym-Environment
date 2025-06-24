@@ -100,9 +100,7 @@ class MazeGameEnv(gym.Env):
             terminated = True
         # else: (empty path or start) reward = 0.0, terminated = False (default)
         
-        # Optional: small negative reward for each step to encourage efficiency
-        # if not terminated:
-        #     reward = -0.01 
+   
 
         observation = self.current_pos.astype(np.int32)
         truncated = False  # True if episode exceeds a time limit (not used here)
