@@ -33,7 +33,7 @@ obs, info = env.reset(seed=42) # Use a seed for consistent random actions if nee
 env.render()
 
 running = True
-num_episodes = 5
+num_episodes = 20
 max_steps_per_episode = 50 # To prevent infinitely running episodes with random agent
 
 for episode in range(num_episodes):
