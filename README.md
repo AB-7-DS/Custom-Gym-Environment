@@ -2,6 +2,14 @@
 
 This project implements a custom reinforcement learning environment using the Gymnasium (formerly OpenAI Gym) API. The environment is a simple 2D maze where an agent navigates from a starting point ('S') to a goal ('G'), avoiding obstacles ('#') and deadly pits ('D'). The environment is rendered using Pygame.
 
+## Demo Video
+
+You can view a demonstration of the environment in action by clicking the link below:
+
+[Watch the Maze Demo Video](/Demo.mp4)
+
+---
+
 ## Features
 
 *   Custom Gymnasium environment (`MazeGameEnv`).
