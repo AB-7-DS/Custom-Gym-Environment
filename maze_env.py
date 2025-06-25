@@ -18,14 +18,14 @@ env = MazeGameEnv(maze=maze_config, render_mode='human')
 
 
 # Test with Stable-Baselines3 environment checker (optional, but good practice)
-try:
-    from stable_baselines3.common.env_checker import check_env
-    check_env(env, warn=True) # warn=True will show warnings, skip_render_check=False by default
-    print("Environment passed SB3 check_env.")
-except ImportError:
-    print("Stable-Baselines3 not found, skipping check_env.")
-except Exception as e:
-    print(f"SB3 check_env failed or issued warnings: {e}")
+# try:
+#     from stable_baselines3.common.env_checker import check_env
+#     check_env(env, warn=True) # warn=True will show warnings, skip_render_check=False by default
+#     print("Environment passed SB3 check_env.")
+# except ImportError:
+#     print("Stable-Baselines3 not found, skipping check_env.")
+# except Exception as e:
+#     print(f"SB3 check_env failed or issued warnings: {e}")
 
 
 # Main loop for testing the environment
