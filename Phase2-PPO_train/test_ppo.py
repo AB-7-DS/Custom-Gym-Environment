@@ -67,7 +67,7 @@ def main():
     TOTAL_TIMESTEPS = 50000  # Adjust as needed. More steps generally lead to better learning.
     print(f"Training PPO agent for {TOTAL_TIMESTEPS} timesteps...")
     # SB3 automatically handles callbacks, logging, etc.
-    model.learn(total_timesteps=TOTAL_TIMESTEPS, progress_bar=True)
+    model.learn(total_timesteps=TOTAL_TIMESTEPS, progress_bar=True )
     print("Training finished.")
 
     # --- 4. Save the trained model ---
